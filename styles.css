@@ -16,7 +16,7 @@ body {
     width: 400px;
     height: 400px;
     overflow: hidden;
-    /* border: 5px dashed #3687b6; */
+    border-radius: 20px;
 }
 
 .background, .main-image {
@@ -33,7 +33,7 @@ body {
     width: 100%;
     height: 100px; /* Justera höjd efter behov */
     transform: scale(4.5); /* Lätt förstoring för att skapa djupkänsla */
-    background-image: url('clouds.png');
+    background-image: url('img/clouds.png');
     background-repeat: repeat-x;
     background-size: contain;
     animation: scroll-clouds 60s linear infinite;
@@ -45,7 +45,7 @@ body {
     width: 100%;
     transform: scale(3); /* Lätt förstoring för att skapa djupkänsla */
     height: 80px; /* Justera höjd efter behov */
-    background-image: url('clouds2.png');
+    background-image: url('img/clouds2.png');
     background-repeat: repeat-x;
     background-size: contain;
     animation: scroll-clouds-fast 30s linear infinite;
@@ -57,7 +57,7 @@ body {
     width: 100%;
     height: 100px; /* Justera höjd efter behov */
     transform: scale(12); /* Lätt förstoring för att skapa djupkänsla */
-    background-image: url('town.gif');
+    background-image: url('img/town.gif');
     background-repeat: repeat-x;
     background-size: contain;
     animation: scroll-town 10s linear infinite;
@@ -70,12 +70,12 @@ body {
 }
 .road-lines {
     position: absolute;
-    top: -40px;
-    left: -420px;
-    width: 1200px;
-    height: 700px; /* Justera höjd efter behov */
-    transform: scale(0.4); /* Lätt förstoring för att skapa djupkänsla */
-    background-image: url('greg.gif');
+    top: 275px;
+    left: 0;
+    width: 500px;
+    height: 100px; /* Justera höjd efter behov */
+    transform: scale(1.5); /* Lätt förstoring för att skapa djupkänsla */
+    background-image: url('img/road_line.png');
     background-repeat: repeat-x;
     animation: scroll-road-lines 1s linear infinite;
 }
@@ -86,7 +86,7 @@ body {
     width: 100%;
     height: 100px; /* Justera höjd efter behov */
     transform: scale(3); /* Lätt förstoring för att skapa djupkänsla */
-    background-image: url('pavement.png');
+    background-image: url('img/pavement.png');
     background-repeat: repeat-x;
     background-size: contain;
     animation: scroll-pavement 6s linear infinite;
@@ -153,6 +153,6 @@ body {
 }
 @keyframes scroll-road-lines {
     0% { background-position: 0 0; }
-    100% { background-position: -500px 0; } /* Justera för att ändra hastighet på scrollen */
+    100% { background-position: -130px 0; } /* Justera för att ändra hastighet på scrollen */
 }
 
