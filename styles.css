@@ -60,7 +60,7 @@ body {
     background-image: url('img/town.gif');
     background-repeat: repeat-x;
     background-size: contain;
-    animation: scroll-town 10s linear infinite;
+    animation: scroll-town 12s linear infinite;
 }
 .road {
     position: absolute;
@@ -138,14 +138,13 @@ body {
     0% { background-position: 0 0; }
     100% { background-position: -300px 0; } /* Justera för att ändra hastighet på scrollen */
 }
-
 @keyframes scroll-clouds-fast {
     0% { background-position: 0 0; }
     100% { background-position: -1000px 0; } /* Snabbare för förgrundsmoln */
 }
 @keyframes scroll-town {
-    0% { background-position: 0 0; }
-    100% { background-position: -160px 0; } /* Justera för att ändra hastighet på scrollen */
+    0% { background-position: 180px 0; }
+    100% { background-position: -10px 0; } /* Justera för att ändra hastighet på scrollen */
 }
 @keyframes scroll-pavement {
     0% { background-position: 0 0; }
