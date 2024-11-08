@@ -1,14 +1,18 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    /* border: 2px solid black; */
 }
 .big-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 80px;
+    /* border: 2px solid black; */
 }
 
 .animation-container {
@@ -91,13 +95,24 @@ body {
     background-size: contain;
     animation: scroll-pavement 6s linear infinite;
 }
+.lamppost {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 360px;
+    transform: scale(1); /* Lätt förstoring för att skapa djupkänsla */
+    background-image: url('img/lamppost.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: scroll-lamppost 2s linear infinite;
+}
 .airplane {
     position: absolute;
     top: 160px;
     left: 150px;
     transform: scale(2);
 }
-
 .foreground {
     position: absolute;
     top: 170px;
@@ -115,6 +130,24 @@ body {
     height: auto;
     transform: scale(4); /* Lätt förstoring för att skapa djupkänsla */
     animation: scroll-foreground-fast 15s linear infinite; /* Snabbare hastighet */
+}
+.forest {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/forest.png');
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    animation: scroll-forest 15s linear infinite; /* Snabbare hastighet */
+}
+.wizard {
+    position: absolute;
+    top: 215px;
+    left: 70px;
+    transform: scale(0.7);
 }
 
 /* Animation för sidledes scroll */
@@ -150,8 +183,16 @@ body {
     0% { background-position: 0 0; }
     100% { background-position: -390px 0; } /* Justera för att ändra hastighet på scrollen */
 }
+@keyframes scroll-lamppost {
+    0% { background-position: 500px 0; }
+    100% { background-position: -390px 0; } /* Justera för att ändra hastighet på scrollen */
+}
 @keyframes scroll-road-lines {
     0% { background-position: 0 0; }
     100% { background-position: -130px 0; } /* Justera för att ändra hastighet på scrollen */
+}
+@keyframes scroll-forest {
+    0% { background-position: 0 0; }
+    100% { background-position: -1000px 0; } /* Justera för att ändra hastighet på scrollen */
 }
 
