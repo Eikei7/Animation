@@ -97,15 +97,15 @@ body {
 }
 .lamppost {
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 0;
     width: 100%;
     height: 360px;
-    transform: scale(1); /* Lätt förstoring för att skapa djupkänsla */
+    transform: scale(1.2); /* Lätt förstoring för att skapa djupkänsla */
     background-image: url('img/lamppost.png');
     background-size: contain;
     background-repeat: no-repeat;
-    animation: scroll-lamppost 2s linear infinite;
+    animation: scroll-lamppost 3s linear infinite;
 }
 .airplane {
     position: absolute;
