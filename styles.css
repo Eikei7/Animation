@@ -193,6 +193,6 @@ body {
 }
 @keyframes scroll-forest {
     0% { background-position: 0 0; }
-    100% { background-position: -1000px 0; } /* Justera för att ändra hastighet på scrollen */
+    100% { background-position: -2600px 0; } /* Justera för att ändra hastighet på scrollen */
 }
 
